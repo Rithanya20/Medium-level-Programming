@@ -1,0 +1,130 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string t;
+    cin>>t;
+    int n =t.size();
+    for(int i=0; i<n;i++){
+        for(int j=0; j<n; j++){
+            if(i==j){
+                cout<<t[i];
+                if(i == t.size()/2){
+                   --n;
+            }
+            }
+            else if(i+j==t.size()-1){
+                cout<<t[--n];
+               
+            }
+            else{
+                cout<<" ";
+            }
+            
+        }
+        cout<<endl;
+    }
+   return 0;
+}
+rithu
+r   u
+ i h
+  t
+------------------------------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string t;
+    cin>>t;
+    int n =t.size();
+    for(int i=0; i<t.size();i++){
+        for(int j=0; j<t.size(); j++){
+            if(i==j){
+                cout<<t[i];
+                if(i == t.size()/2){
+                   --n;
+            }
+            }
+            else if(i+j==t.size()-1){
+                cout<<t[--n];
+               
+            }
+            else{
+                cout<<" ";
+            }
+            
+        }
+        cout<<endl;
+    }
+   return 0;
+}
+rithu
+r   u
+ i h 
+  t  
+ i h 
+r   u
+-------------------------------------------------------------------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    int n =t;
+    int star=n/2 + 1;
+    int light = star;
+    int space = 0;
+    while(star > 0){
+    for(int i=0; i<star; i++){
+        cout<<'*';
+        
+    }
+    
+    
+    for(int i=0; i<space; i++){
+        cout<<" ";
+    }
+    space+=2;
+    for(int i=0; i<star; i++){
+        cout<<'*';
+        
+    }
+    cout<<endl;
+    star--;
+    }
+    
+    
+    star = 2;
+    space = space-(star+star);
+    while(star <= light){
+    for(int i=0; i<star; i++){
+        cout<<'*';
+    }
+    for(int i=0; i<space; i++){
+        cout<<" ";
+    }
+    space-=2;
+    for(int i=0; i<star; i++){
+        cout<<'*';
+        
+    }
+    cout<<endl;
+    star++;    
+    }
+    
+    
+    
+   return 0;
+}
+11
+************
+*****  *****
+****    ****
+***      ***
+**        **
+*          *
+**        **
+***      ***
+****    ****
+*****  *****
+************
+___________________________________________________________________
