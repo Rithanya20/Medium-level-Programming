@@ -1,0 +1,61 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string hex;
+    cin>>hex;
+    string ans="";
+    for(int i=0; hex[i]!='\0'; i++){
+        if(hex[i]=='A'){
+            ans+= "1010";
+        }
+        if(hex[i]=='B'){
+            ans+= "1011";
+        }
+        if(hex[i]=='C'){
+            ans+= "1100";
+        }
+        if(hex[i]=='D'){
+            ans+= "1101";
+        }
+        if(hex[i]=='E'){
+            ans+= "1110";
+        }
+        if(hex[i]=='F'){
+            ans+= "1111";
+        }
+        if(hex[i]=='1'){
+            ans += "0001";
+        }
+        if(hex[i]=='2'){
+            ans += "0010";
+        }
+        if(hex[i]=='3'){
+            ans += "0011";
+        }
+        if(hex[i]=='4'){
+            ans += "0100";
+        }
+        if(hex[i]=='5'){
+            ans += "0101";
+        }
+        if(hex[i]=='6'){
+            ans += "0110";
+        }
+        if(hex[i]=='7'){
+            ans += "0111";
+        }
+        if(hex[i]=='8'){
+            ans += "1000";
+        }
+        if(hex[i]=='9'){
+            ans += "1001";
+        }
+        
+    }
+    
+    cout<<ans;
+    
+    return 0;
+}
+Input: Hexadecimal = 1AC5
+Output: Binary = 0001101011000101
