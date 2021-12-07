@@ -159,3 +159,108 @@ int main(){
     ***
      *
 _______________________________________
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int r;
+    cin>>r;
+    int c = r/2;
+    int ospace = c;
+    int ispace = 1;
+    for(int i=0; i<r; i++){
+        for(int j=0; j<ospace; j++){
+            cout<<" ";
+        }
+        if(i<c){
+            ospace--;
+        }
+        else{
+            ospace++;
+        }
+
+        if(i==0||i==r-1){
+            cout<<"*";
+        }
+        else{
+        cout<<"*";
+        for(int j=0; j<ispace; j++){
+            cout<<" ";
+        }
+        if(i<c){
+            ispace += 2;
+        }
+        else{
+            ispace -= 2;
+        }
+        cout<<"*";
+        }
+        cout<<endl;
+
+    }
+
+    return 0;
+}
+9
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+    _________________________
+   #include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int r;
+    cin>>r;
+    int c = r/2;
+    int ospace = c;
+    int ispace = 1;
+    for(int i=0; i<r; i++){
+        for(int j=0; j<ospace; j++){
+            cout<<" ";
+        }
+        if(i<c){
+            ospace++;
+        }
+        else{
+            ospace--;
+        }
+
+        if(i==0||i==r-1){
+            cout<<"*";
+        }
+        else{
+        cout<<"*";
+        for(int j=0; j<ispace; j++){
+            cout<<" ";
+        }
+        if(i<c){
+            ispace += 2;
+        }
+        else{
+            ispace -= 2;
+        }
+        cout<<"*";
+        }
+        cout<<endl;
+
+    }
+
+    return 0;
+}
+9
+    *
+     * *
+      *   *
+       *     *
+        *       *
+       *     *
+      *   *
+     * *
+    *
+ ____________________________
