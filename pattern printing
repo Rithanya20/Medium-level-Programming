@@ -295,3 +295,36 @@ return 0;
  *****
 *****
 ______________________________
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+  int t;
+  cin>>t;
+  int n = (2*t)-1;
+  int space = 1;
+  for(int i=0; i<t; i++){
+    if(i>0){
+        for(int j=1; j<=space; j++  ){
+            cout<<" ";
+
+        }
+        space += 1;
+    }
+    for(int j=0; j<n; j++){
+        cout<<"*";
+    }
+    n -= 2;
+    cout<<endl;
+  }
+
+
+
+return 0;
+}
+6
+***********
+ *********
+  *******
+   *****
+    ***
+     *
