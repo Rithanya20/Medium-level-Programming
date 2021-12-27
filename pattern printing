@@ -435,3 +435,47 @@ int main(){
 3321233
 4321234
 _______________________
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,i,c=1,j=0,ans;
+ //scanf("%d",&n);
+ cin>>n;
+ int a[n][n];
+    if(n%2==0){ans=(pow(n,2)/2)+n/2;}
+    else 
+    ans=(n-(n/2))*n;
+    
+    int m=n-1,p=0,l=0,k;
+    while(c-1<ans)
+    {
+        for(i=l+p;i<=m&&c-1<ans;i++)
+        a[i][i-l]=c++;
+        ++l;
+        for(j=m-l;j>=p&&c-1<ans;j--)
+        a[m][j]=c++;
+        for(k=m-1;k>l+p-1&&c-1<ans;k--)
+        a[k][p]=c++;
+        m--;p++;
+    }
+    for(i=0;i<n;i++)
+    {    for(j=0;j<=i;j++)
+        {    //printf("%d ",a[i][j]);
+            cout<<a[i][j];
+        }
+        cout<<endl;
+        //printf("\n");
+    }
+ return 0;
+}
+9
+1
+242
+23253
+2239264
+213840275
+20374541286
+1936444342297
+183534333231308
+17161514131211109
+
