@@ -520,4 +520,42 @@ WATER
   TER
  TERW
 TERWA
+_______________________________________________
+#include <iostream>
 
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int col = n;
+    for(int i= 1; i<=n; i++){
+        int x =1;
+        for(int j = 1; j<col; j++ ){
+            cout<<" ";
+        }
+        col--;
+        int temp;
+        for(int k = 1; k<=i; k++){
+            cout<<k;
+            temp = k;
+        }
+        for(int l = temp-1; l > 0 ; l--){
+            cout<<l;
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
+1 9
+        1
+       121
+      12321
+     1234321
+    123454321
+   12345654321
+  1234567654321
+ 123456787654321
+12345678987654321
