@@ -24,6 +24,8 @@ int main()
             j++;
             
             if(j == len){
+                 cout<<"starts at "<<i-len + 1<<" ";
+                cout<<"ends at : "<<i<<endl;
                 
                 j = 0;
                 occur++;
@@ -36,4 +38,6 @@ int main()
 }
 GEEKSFORGEEKS
 GEEKS
+starts at 0 ends at : 4
+starts at 8 ends at : 12
 2
